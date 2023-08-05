@@ -1,0 +1,19 @@
+.card {
+    background-color: "red";
+    display: flex;
+    border: 1px solid black; 
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#page2-title {
+    margin-left: 15px;
+}
+
+#page2-body {
+    margin-left: 15px;
+}
+
+#image2-gif {
+    margin: 10px;
+}
