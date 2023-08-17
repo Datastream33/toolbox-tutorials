@@ -30,4 +30,5 @@ body {
     margin-left: 1%;
     width: 450px;
     height: 450px;
+    float: left;
 }
