@@ -9,28 +9,32 @@
   </head>
   <body>
   <div class="card">
-    <h1 id="page2-title">Switching Between Menu Pages</h1>
+    <h1 class="tutorial-title">Switching Between Menu Pages</h1>
   </div>
   <div class="card" style="align-items: normal; justify-content: left;">
-    <div style="display: table-cell;">
-      <img id="image2-gif" src="../images/page2.gif" alt="">
-      <div style="display: block;">
-        <p class="page2-body">
-          The Toolbox has an impressive amount of tools, with a solid count of 19, with each tool boasting their own subtools.
-          However, only 10 tools can be displayed per Main Menu page. So you may be asking... where are the other 9 tools?
-        </p>
-        <p class="page2-body">
-          If you look towards the bottom right of the window, you'll see two radio buttons sitting side by side.
-          These radio buttons determine which page you're currently on. 
-          If the left radio button is selected, you're currently on the first page of tools, if the right is selected your on the 2nd page of tools. 
-          As the Toolbox grows, more pages may be added where needed.
-        </p>
-        <div>
-        <p class="page2-body">
-          Try switching between pages 1 and 2 now.
-        </p>
-    </div>
-    </div>
+    <img class="tutorial-gif" src="../images/switch_pages.gif" alt="">
+    <textarea readonly class="tutorial-textarea">The Toolbox has an impressive amount of tools, with a solid count of 19, with each tool boasting their own subtools. However, only 10 tools can be displayed per Main Menu page. So you may be asking... where are the other 9 tools?&#10;&#10;If you look towards the bottom right of the window, you'll see two radio buttons sitting side by side. These radio buttons determine which page you're currently on. If the left radio button is selected, you're currently on the first page of tools, if the right is selected your on the 2nd page of tools. As the Toolbox grows, more pages may be added where needed.&#10;&#10;Try switching between pages 1 and 2 now. 
+    </textarea>
   </div>
+  <div class="popup-img">
+    <span>&times;</span>
+    <img src="../images/switch_pages.gif" alt="">
+  </div>
+
+  <script>
+
+    const im = document.querySelector('.tutorial-gif');
+
+    im.onclick = () => {
+      document.querySelector('.popup-img').style.display = 'block';
+      document.querySelector('.popup-img img').src = im.getAttribute('src');
+    };
+
+    document.querySelector('.popup-img span').onclick = () => {
+      document.querySelector('.popup-img').style.display = 'none';
+    };
+
+  </script>
+
   </body>
 </html>
