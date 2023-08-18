@@ -13,22 +13,65 @@ body {
     pad: 0px;
 }
 
-#page2-title {
+.tutorial-title {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.page2-body {
-    margin-left: 15px;
-    margin-top: 21px;
-    margin-right: 10px;
-}
-
-#image2-gif {
+.tutorial-gif {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 1%;
     width: 450px;
     height: 450px;
     float: left;
+    cursor: zoom-in;
+}
+
+.tutorial-textarea {
+    display: block; 
+    background-color: transparent;
+    width: 100%; 
+    height: auto; 
+    margin-left: 5px; 
+    margin-top: 21px; 
+    margin-right: 10px; 
+    margin-bottom: 21px; 
+}
+
+.popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-img span {
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-img img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .popup-img img {
+        width: 95%;
+    }
 }
